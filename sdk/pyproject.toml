@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vehicle-service-sdk"
+version = "1.0.0"
+description = "Python SDK for the Vehicle Service API (generated from the Postman Vehicle Service Collection)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.25.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["vehicle_service_sdk*"]
